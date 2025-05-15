@@ -7,5 +7,7 @@ vim.cmd("set shiftwidth=2")
 vim.opt.relativenumber = true
 vim.opt.number = true
 
-vim.g.mapleader = " "
+vim.opt.scrolloff = 10
+
+
 

@@ -9,6 +9,10 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require('mason-lspconfig').setup({
+        automatic_enable = {
+          "lua_ls",
+
+        },
         ensure_installed = {
           "lua_ls",
           "pylsp",
@@ -22,7 +26,6 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gs', vim.lsp.buf.signature_help,{})
       vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})
