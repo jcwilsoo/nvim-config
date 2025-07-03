@@ -1,4 +1,4 @@
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
 
 -- Scrolling
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
